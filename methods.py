@@ -35,7 +35,7 @@ def trapeze(n, h):
     while (i < 5000):
         s += (fonc(n, i) + fonc(n, i + 0.5)) / 2 * h
         i += 0.5
-    print('Trapezoides:')
+    print('Trapezoids:')
     print('I%d' % n, '=', '%.10f' % s)
     dif_with_pi(s)
 
