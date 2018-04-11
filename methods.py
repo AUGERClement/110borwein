@@ -36,8 +36,8 @@ def trapeze(n, h):
         s += (fonc(n, i) + fonc(n, i + 0.5)) / 2 * h
         i += 0.5
     print('Trapezoids:')
-    if (produit < 0 && produit > -0.0000000001):
-        produit = 0
+    if (s < 0 && s > -0.0000000001):
+        s = 0
     print('I%d' % n, '=', '%.10f' % s)
     dif_with_pi(s)
 
