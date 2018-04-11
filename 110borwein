@@ -13,7 +13,7 @@ except:
     if (sys.argv[1] != "-h"):
         quit(84)
     else:
-        print('Pranked. There no help here !\nYou\'re alone.')
+        print('There no help here !\nYou\'re alone.')
         quit(0)
 h = 0.5
 methods.rect(n, h)
