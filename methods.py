@@ -17,6 +17,8 @@ def fonc(n, x):
 
 def dif_with_pi(value):
     dif = value - (math.pi/2)
+    if (dif < 0 and dif > -0.0000000001):
+        dif = 0
     print('diff =', '%.10f' % dif)
 
 def rect(n, h):
@@ -36,8 +38,6 @@ def trapeze(n, h):
         s += (fonc(n, i) + fonc(n, i + 0.5)) / 2 * h
         i += 0.5
     print('Trapezoids:')
-    if (s < 0 && s > -0.0000000001):
-        s = 0
     print('I%d' % n, '=', '%.10f' % s)
     dif_with_pi(s)
 
@@ -57,7 +57,5 @@ def simpson(n, h):
         j += 1
     produit = hp * (fonc(n, 0) + fonc(n, 5000) + (2.0 * a1) + (4.0 * a2))
     print('Simpson:')
-    if (produit < 0 && produit > -0.0000000001):
-        produit = 0
     print('I%d' % n, '=', '%.10f' % produit)
     dif_with_pi(produit)
